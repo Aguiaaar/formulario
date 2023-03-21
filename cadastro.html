@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Cadastro de Usuário</legend>
+            <label for="inome">Nome:</label>
+            <input type="text" id="inome" name="tnome" placeholder="Digite seu nome">
+            <br>
+            <label for="idata">Data de nascimento:</label>
+            <input type="date" id="idata" name="tdata">
+            <br>
+            <label for="imail">E-mail:</label>
+            <input type="email" id="imail" name="memail" placeholder="seuemail@seudominio.com.br">
+            <br>
+            <label for="imailconfirm">Confirmar E-mail:</label>
+            <input type="email" id="imailconfirm" name="memailconfitm" placeholder="Confirme seu E-mail">
+            <br>
+            <label for="isexo">Gênero:</label>
+            <select name="ssexo" id="isexo">
+                <option value="S" selected></option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outro</option>
+            </select>
+            <br>
+            <label>Tipo:</label>
+            <input type="radio" name="rtipo" id="itusuario" value="U">
+            <label for="itusuario">Usuário</label>
+
+            <input type="radio" name="rtipo" id="itadmin" value="A">
+            <label for="itadmin">Administrador</label>
+            <br>
+            <label for="ivoce">Fale sobre você:</label>
+            <br>
+            <textarea name="voce" id="ivoce" cols="30" rows="10" placeholder="Nos conte um pouco sobre você..."></textarea>
+            <br>
+            <label for="iavaliacao">Avaliação (de 0 a 10)</label>
+            <input type="range" id="iavaliacao" name="ravaliacao">
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Excluir">
+        </fieldset>
+    </form>
+</body>
+</html>
